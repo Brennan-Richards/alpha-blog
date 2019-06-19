@@ -1,11 +1,11 @@
-<h1>Create an article</h1>
+<h1>Update an article</h1>
 
 <% if @article.errors.any? %>
-  <h2>The article could not be created for the following reasons:</h2>
+  <h2>The article could not be updated for the following reasons:</h2>
 
   <ul>
     <% @article.errors.full_messages.each do |msg| %>
-    <li><%= msg %> </li>
+    <li> <%= msg %> </li>
     <% end %>
   </ul>
 
@@ -34,7 +34,5 @@
 <%= f.submit %>
 
 </p>
-
-<%=  link_to 'Back to articles table', articles_path %>
 
 <% end %>
