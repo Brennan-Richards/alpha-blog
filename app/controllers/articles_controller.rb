@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
 
+before_action :set_article, only: [:edit, :update, :show, :destroy]
+
   def index
 
     @articles = Article.all
@@ -26,13 +28,9 @@ class ArticlesController < ApplicationController
 
   def edit
 
-    @article = Article.find(params[:id])
-
   end
 
   def update
-
-    @article = Article.find(params[:id])
 
     if @article.update(article_params)
 
@@ -48,16 +46,27 @@ class ArticlesController < ApplicationController
 
   end
 
+  def destroy
+
+    @article.delete
+    redirect_to articles_path
+    flash[:notice] = "Article was successfully deleted."
+
+  end
+
   def show
 
-    @article = Article.find(params[:id])
-
   end
 
-  def article_params
+  private
+    def set_article
+      @article = Article.find(params[:id])
+    end
 
-    params.require(:article).permit(:title, :description)
+    def article_params
 
-  end
+      params.require(:article).permit(:title, :description)
+
+    end
 
 end
