@@ -111,7 +111,7 @@ GEM
     minitest (5.11.3)
     msgpack (1.2.10)
     nio4r (2.3.1)
-    nokogiri (1.10.3)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     pg (0.21.0)
     public_suffix (3.1.0)
@@ -137,8 +137,6 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
-    rails-ujs (0.1.0)
-      railties (>= 3.1)
     railties (5.2.3)
       actionpack (= 5.2.3)
       activesupport (= 5.2.3)
@@ -215,7 +213,6 @@ DEPENDENCIES
   pg (~> 0.11)
   puma (~> 3.11)
   rails (~> 5.2.3)
-  rails-ujs (~> 0.1.0)
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
