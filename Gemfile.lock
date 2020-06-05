@@ -137,8 +137,6 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
-    rails-ujs (0.1.0)
-      railties (>= 3.1)
     railties (5.2.3)
       actionpack (= 5.2.3)
       activesupport (= 5.2.3)
@@ -195,7 +193,7 @@ GEM
       railties (>= 5.0)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.4)
+    websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
@@ -215,7 +213,6 @@ DEPENDENCIES
   pg (~> 0.11)
   puma (~> 3.11)
   rails (~> 5.2.3)
-  rails-ujs (~> 0.1.0)
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
