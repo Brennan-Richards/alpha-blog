@@ -116,7 +116,7 @@ GEM
     pg (0.21.0)
     public_suffix (3.1.0)
     puma (3.12.1)
-    rack (2.0.7)
+    rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.3)
@@ -137,8 +137,6 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
-    rails-ujs (0.1.0)
-      railties (>= 3.1)
     railties (5.2.3)
       actionpack (= 5.2.3)
       activesupport (= 5.2.3)
@@ -215,7 +213,6 @@ DEPENDENCIES
   pg (~> 0.11)
   puma (~> 3.11)
   rails (~> 5.2.3)
-  rails-ujs (~> 0.1.0)
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
